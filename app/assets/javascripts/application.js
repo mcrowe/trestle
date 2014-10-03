@@ -4,3 +4,4 @@
 //= require underscore
 
 //= require ./application/app
+//= require ./application/home-index
