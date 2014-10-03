@@ -30,3 +30,18 @@ table.scaffold-table {
     }
   }
 }
+
+.center-content {
+  @extend .col-sm-6;
+  @extend .col-sm-offset-3;
+}
+
+.errors {
+  @extend .alert;
+  @extend .alert-warning;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
