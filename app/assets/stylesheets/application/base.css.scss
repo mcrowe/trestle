@@ -18,3 +18,15 @@ h1, h2, h3, h4, h5 {
 body {
   background-color: #f6f6f6;
 }
+
+table.scaffold-table {
+  @extend .table;
+  @extend .table-striped;
+
+  td:last-child {
+    text-align: right;
+    a {
+      margin-left: 10px;
+    }
+  }
+}

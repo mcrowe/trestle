@@ -7,4 +7,3 @@
 Todo:
 
 - Make different branches that you can include separate features in. e.g. Foundation branch. Password-authentication branch....
-- Scaffolding templates (controller and views)
