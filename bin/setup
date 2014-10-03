@@ -14,5 +14,12 @@ end
 underscore_name = underscore(name)
 titlecase_name = titlecase(name)
 
+puts 'Setting application name.'
 `find . -type f | xargs perl -pi -e 's/Trestle/#{titlecase_name}/g'`
 `find . -type f | xargs perl -pi -e 's/trestle/#{underscore_name}/g'`
+
+puts 'Generating a unique secret.'
+secret = `rake secret`
+
+
+puts 'Done.'
