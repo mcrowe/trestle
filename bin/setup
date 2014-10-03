@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+puts "What should we call you app?"
+name = gets
+
+def underscore(string)
+  string.downcase.split.join('_')
+end
+
+def titlecase(string)
+  string.split.map(&:capitalize).join
+end
+
+underscore_name = underscore(name)
+titlecase_name = titlecase(name)
+
+`find . -type f | xargs perl -pi -e 's/Trestle/#{titlecase_name}/g'`
+`find . -type f | xargs perl -pi -e 's/trestle/#{underscore_name}/g'`
