@@ -1,7 +1,7 @@
 module ApplicationHelper
 
-  def active_if_controller(controller_names)
-    Array(controller_names).include?(params[:controller])  ? 'active' : ''
+  def active_if_current(path)
+    request.path == path ? 'active' : ''
   end
 
 end

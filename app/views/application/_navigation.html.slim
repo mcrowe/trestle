@@ -12,6 +12,6 @@
     .navbar-collapse.collapse
 
       ul.nav.navbar-nav
-        li.active= link_to 'Home', root_path
+        li[class=(active_if_current('/'))]= link_to 'Home', root_path
 
       ul.nav.navbar-nav.navbar-right
