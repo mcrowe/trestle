@@ -1,0 +1,10 @@
+- if resource.errors.any?
+  .errors
+
+    button.close[type="button" data-dismiss="alert" aria-hidden="true"] ×
+
+    h4 Woops
+
+    ul
+      - resource.errors.full_messages.each do |msg|
+        li= msg
