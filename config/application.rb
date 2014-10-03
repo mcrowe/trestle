@@ -16,6 +16,14 @@ module Trestle
     config.generators.decorator = false
 
 
+    # Allow loading web-fonts from a cdn.
+    config.middleware.insert_before ActionDispatch::Static, Rack::Cors do
+      allow do
+        origins '*'
+        resource '/assets/*', headers: :any, methods: :get
+      end
+    end
+
     I18n.enforce_available_locales = false
 
     config.action_controller.include_all_helpers = false

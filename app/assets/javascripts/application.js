@@ -4,4 +4,5 @@
 //= require underscore
 
 //= require ./application/app
+//= require ./application/google_analytics
 //= require ./application/home-index

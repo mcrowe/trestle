@@ -1,8 +1,9 @@
 # Template for a basic Rails application
 
-- Replace "Penguin" and "penguin" with your app name across the site.
+- `./bin/setup`
 - `bundle`
 - `rake db:create:all`
+- Set `GOOGLE_ANALYTICS_SITE_ID` environment variable
 
 Todo:
 
