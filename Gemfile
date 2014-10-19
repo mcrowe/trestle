@@ -20,6 +20,7 @@ gem 'memoist'
 gem 'active_model_serializers'
 gem 'bootswatch-rails'
 gem 'rack-cors', require: 'rack/cors'
+gem 'dotenv-rails'
 
 group :development do
   gem 'quiet_assets'

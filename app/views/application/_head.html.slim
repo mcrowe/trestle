@@ -5,7 +5,7 @@ title Trestle
 meta[name="description" content=""]
 meta[name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"]
 
-- if site_id = Rails.application.secrets.google_analytics_site_id.presence
+- if site_id = ENV['GOOGLE_ANALYTICS_SITE_ID']
   meta[name='google-analytics-site-id' content="#{site_id}"]
 
 = stylesheet_link_tag 'application'

@@ -19,6 +19,32 @@ body {
   background-color: #f6f6f6;
 }
 
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent-color, 10%);
+  }
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+h1.page-header {
+  border-bottom: none;
+}
+
+h1 a.btn {
+  font-family: $body-font;
+  color: #424242;
+}
+
+.btn.btn-default {
+  color: $accent-color;
+}
+
 table.scaffold-table {
   @extend .table;
   @extend .table-striped;
