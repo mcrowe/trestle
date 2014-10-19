@@ -1,7 +1,11 @@
 module ApplicationHelper
 
-  def active_if_current(path)
-    request.path == path ? 'active' : ''
+  def nav_item(path, options = {}, &block)
+    klass = current_page?(path) ? 'active' : ''
+
+    content_tag(:li, class: klass) do
+      link_to(path, options, &block)
+    end
   end
 
 end
