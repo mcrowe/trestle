@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.5'
 
-gem 'rails', '~> 4.1.6'
+gem 'rails'
 
 gem 'pg'
 gem 'thin'
@@ -12,19 +12,19 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'slim-rails'
 gem 'underscore-rails'
-gem 'simple_form', '~> 3.0.2'
-gem 'bootstrap-sass', '~> 3.1.1'
-gem 'draper', '~> 1.3'
+gem 'simple_form'
+gem 'bootstrap-sass'
+gem 'draper'
 gem 'font-awesome-rails'
 gem 'memoist'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '0.9.2' # See https://github.com/drapergem/draper/issues/651
 gem 'bootswatch-rails'
 gem 'rack-cors', require: 'rack/cors'
 gem 'dotenv-rails'
 
 group :development do
   gem 'quiet_assets'
-  gem 'annotate', '~> 2.6.2'
+  gem 'annotate'
   gem 'faker'
   gem 'spring'
 end
